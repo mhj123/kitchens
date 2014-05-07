@@ -6,74 +6,111 @@ get_header();  ?>
 
 <div class="container-fluid">
 
-    <!-- Carousel ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://127.0.0.1:8080/simplekitchens/wp-content/uploads/2014/05/MG_1173.jpg" alt="First slide" class="img-responsive">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+
 
 
     <!-- Offcanvas menu ================================================== -->
 
 	<div class="row row-offcanvas row-offcanvas-left">
 
-    <div class="col-sm-3">
-      <div class="sidebar-offcanvas" data-spy="affix" data-offset-top="600" role="complementary">
+<?php include('sidebar.php'); ?>
 
-       <?php wp_nav_menu( array( 'theme_location' => 'sidebar-menu', 'menu_class' => 'list-group', 'items_wrap' => '<ul id="%1$s" class="list-group-item">%3$s</ul>'
- ) ); ?>
-
-      </div><!-- .sidebar-offcanvas -->
-		</div><!-- .col-sm-3 -->
 
 		<div class="col-sm-9">
+
+    <!-- Carousel ================================================== -->
+   
+         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/MG_1173b.jpg" alt="Apple iPhone 5S">
+            <div class="carousel-caption">
+              <h1>Create your dream kitchen for less...</h1>
+              <!--<p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>-->
+            </div>
+          </div>
+          <div class="item">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/Voila_Capture-2014-05-03_09-51-32_pmb.png" alt="Samsung Galaxy Note 3">
+            <div class="carousel-caption">
+              <h3>...with our beautifully designed quality kitchen units.</h3>
+              <!--<p>Similar to the updates Samsung made to the Galaxy S4, the new Note 3 features a bigger display while remaining very similar in size to the Note II; the biggest change in the Note 3 is the refinement of the S Pen and its accompanying software.</p>-->
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+
+
+
 
 			<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 					<article>
             <h1><?php the_title(); ?></h1>
+            <div class="hpintro">
 						<?php the_content(); ?>
+            </div>
 					</article>
 			<?php endwhile; ?>
 			<?php endif; ?>
+
+<hr>
+
+        <div class="row featurette">
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Measure your room. <span class="text-muted"><a href="http://www.mj-pm.co.uk/simplekitchens/measuring-your-kitchen/">Read our handy guide.</a></span></h2>
+          <p class="lead">Part of the reason we're able to offer our kitchen units at such exceptional value is that we don't bundle an expensive measuring service. Instead we provide a comprehensive guide to measuring your room.</p>
+        </div>
+          <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/DSCF8996.jpg" alt="Generic placeholder image">
+        </div>
+        </div>
+
+<hr>
+
+        <div class="row featurette">
+        <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/kitchen-design-software-pictures-50067.jpg" alt="Generic placeholder image">
+        </div>
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Design your kitchen. <span class="text-muted">Using our <em>free</em> online tool.</span></h2>
+          <p class="lead">We provide an easy-to-use online tool for you to design your kitchen in your web browser. You can then save your kitchen plan and order your units from within our website!</p>
+          <p>Alternatively, here's a guide to designing your kitchen the old-fashioned way, with pen and paper.</p>
+        </div>
+        </div>
+        <hr>
+
+        <div class="row featurette">
+
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Browse our catalogue. <span class="text-muted"><a href="http://www.mj-pm.co.uk/simplekitchens/shop/">Select your units and order</a>.</span></h2>
+          <p class="lead">If you already have a good idea of what you're looking for, click here to browse and choose our kitchen units.</p>
+        </div>
+                <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/Voila_Capture-2014-05-03_09-51-32_pmb.png" alt="Generic placeholder image">
+        </div>
+        </div>
+
+<hr>
+
+<?php the_field('homepage1'); ?>
+
 
 		</div><!-- .col-sm-9 -->
 
