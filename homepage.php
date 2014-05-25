@@ -32,6 +32,7 @@ get_header();  ?>
         <div class="carousel-inner">
           <div class="item active">
             <img src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/MG_1173b.jpg" alt="Apple iPhone 5S">
+<<<<<<< HEAD
             <div class="carousel-caption">
               <h1>Create your dream kitchen for less.</h1>
               <!--<p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>-->
@@ -48,6 +49,17 @@ get_header();  ?>
             <img src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/Inderst-Render-V2carousel.png" alt="Samsung Galaxy Note 3">
             <div class="carousel-caption">
               <h1>Using our easy-to-use free online tool.</h1>
+=======
+            <div class="carousel-caption">
+              <h1>Create your dream kitchen for less...</h1>
+              <!--<p>The iPhone 5s isn't a radical departure from its predecessor in body (unless you count a new gold color), but under the hood are a number of changes that give Apple's newest flagship some real firepower, with the best still yet to come. </p>-->
+            </div>
+          </div>
+          <div class="item">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/Voila_Capture-2014-05-03_09-51-32_pmb.png" alt="Samsung Galaxy Note 3">
+            <div class="carousel-caption">
+              <h3>...with our beautifully designed quality kitchen units.</h3>
+>>>>>>> 7ddade3ac47e9f0c4b40ad73871fe4b5c94a67b4
               <!--<p>Similar to the updates Samsung made to the Galaxy S4, the new Note 3 features a bigger display while remaining very similar in size to the Note II; the biggest change in the Note 3 is the refinement of the S Pen and its accompanying software.</p>-->
             </div>
           </div>
@@ -69,7 +81,11 @@ get_header();  ?>
 			<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 					<article>
+<<<<<<< HEAD
             <h1 class="sitetitle"><?php echo get_bloginfo ('name'); ?></h1>
+=======
+            <h1><?php the_title(); ?></h1>
+>>>>>>> 7ddade3ac47e9f0c4b40ad73871fe4b5c94a67b4
             <div class="hpintro">
 						<?php the_content(); ?>
             </div>
@@ -77,6 +93,7 @@ get_header();  ?>
 			<?php endwhile; ?>
 			<?php endif; ?>
 
+<<<<<<< HEAD
 
 
 <div id="featurettes">
@@ -123,12 +140,24 @@ get_header();  ?>
         </div>
            <div class="col-sm-5">
           <img class="featurette-image img-responsive" src="<?php the_field('second_featurette_image_link'); ?>" alt="Generic placeholder image">
+=======
+<hr>
+
+        <div class="row featurette">
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Measure your room. <span class="text-muted"><a href="http://www.mj-pm.co.uk/simplekitchens/measuring-your-kitchen/">Read our handy guide.</a></span></h2>
+          <p class="lead">Part of the reason we're able to offer our kitchen units at such exceptional value is that we don't bundle an expensive measuring service. Instead we provide a comprehensive guide to measuring your room.</p>
+        </div>
+          <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/DSCF8996.jpg" alt="Generic placeholder image">
+>>>>>>> 7ddade3ac47e9f0c4b40ad73871fe4b5c94a67b4
         </div>
         </div>
 
 <hr>
 
         <div class="row featurette">
+<<<<<<< HEAD
           <div class="col-sm-5">
           <img class="featurette-image img-responsive" src="<?php the_field('third_featurette_image_link'); ?>" alt="Generic placeholder image">
         </div>
@@ -148,6 +177,30 @@ get_header();  ?>
         </div>
         </div>
 </div>
+=======
+        <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/kitchen-design-software-pictures-50067.jpg" alt="Generic placeholder image">
+        </div>
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Design your kitchen. <span class="text-muted">Using our <em>free</em> online tool.</span></h2>
+          <p class="lead">We provide an easy-to-use online tool for you to design your kitchen in your web browser. You can then save your kitchen plan and order your units from within our website!</p>
+          <p>Alternatively, here's a guide to designing your kitchen the old-fashioned way, with pen and paper.</p>
+        </div>
+        </div>
+        <hr>
+
+        <div class="row featurette">
+
+         <div class="col-sm-7">
+          <h2 class="featurette-heading">Browse our catalogue. <span class="text-muted"><a href="http://www.mj-pm.co.uk/simplekitchens/shop/">Select your units and order</a>.</span></h2>
+          <p class="lead">If you already have a good idea of what you're looking for, click here to browse and choose our kitchen units.</p>
+        </div>
+                <div class="col-sm-5">
+          <img class="featurette-image img-responsive" src="<?php echo home_url(); ?>/wp-content/uploads/2014/05/Voila_Capture-2014-05-03_09-51-32_pmb.png" alt="Generic placeholder image">
+        </div>
+        </div>
+
+>>>>>>> 7ddade3ac47e9f0c4b40ad73871fe4b5c94a67b4
 <hr>
 
 <?php the_field('homepage1'); ?>
