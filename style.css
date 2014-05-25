@@ -25,8 +25,8 @@ CONTENTS:
 @import "css/reset.css";
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-theme.css'); 
-@import url('bootstrap/css/carousel.css'); 
 @import url('bootstrap/css/offcanvas.css'); 
+
 
 div,
 article,
@@ -84,15 +84,15 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 }
 
 /* Start of custom styles */
-
+/*
 .affix{
     position: fixed;
     width:311px;
     display: block;
     float: left;
-    top:40px;
+    top:0px;
 }
-
+*/
 .customize-support {
 	padding-top: 0;
 }
@@ -100,8 +100,108 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 
 position: fixed; top: 0; left: 0; width: auto;
 }
+div.carousel-caption h1 {
+	color: #fff;
+}
+div.carousel-caption h2, div.carousel-caption h3 {
+	color: #333;
+}
 
+hr {
+	margin: 50px 0 50px 0;
+	height: 10px;
+        color: #bbb;
+        background-color: #bbb;
+}
+hr.narrow-divider {
+	margin: 30px 0 30px 0;
+	height: 3px;
+        color: #bbb;
+        background-color: #bbb;
+}
 
+div.hpintro ul li {
+	font-size: 20px;
+}
+div.menu-menu-1-container {
+	border: none;
+}
+.body {
+padding-top: 0;
+}
 
+.marketing .col-sm-6 h2 {
+  text-align: center;
+}
+.marketing .img-img.circle {
+text-align: center;
+vertical-align: middle;
+}
+div.imgcentr {
+margin:auto;
+padding:0;
+width:200px;
+}
+div.sidebar-offcanvas.affix {
+width:25%;
+padding-right: 30px;
+}
+div#gallery-2 dl.gallery-item {
+  width: 25%;
+  margin-bottom: 50px;
+}
+div#gallery-2 br {
+  display: none;
+}
+div#featurettes {
+  clear:left;
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  .lead {
+    font-size: 20px;
+  }
+}
+div.carousel-caption {
+  background: rgba(0, 0, 0, 0.30);
+  left:0;
+  right:0;
+  bottom: 0;
+  height: 120px;
+}
+ol.carousel-indicators {
+  display: none;
+}
+/*
+div.sidebar-offcanvas h4, h1.sitetitle {
+  font-family: 'Dancing Script', cursive;
+}
 
+div.sidebar-offcanvas h4 {
+  font-size: 30px;
+}
+*/
+h1.sitetitle {
+  font-size: 70px;
+}
+table.variations td.label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  padding-left: 0;
+}
+img.attachment-shop_single.wp-post-image {
+  float: left;
+  margin-right: 20px;
+}
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+  float: left;
+}
 
+.woocommerce .related ul li.product img, .woocommerce .related ul.products li.product img, .woocommerce .upsells.products ul li.product img, .woocommerce .upsells.products ul.products li.product img, .woocommerce-page .related ul li.product img, .woocommerce-page .related ul.products li.product img, .woocommerce-page .upsells.products ul li.product img, .woocommerce-page .upsells.products ul.products li.product img {
+  width:200px;
+
+}
+.woocommerce h1 {
+  margin-top: 0;
+}

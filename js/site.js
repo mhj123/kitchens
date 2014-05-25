@@ -1,7 +1,8 @@
 
 	jQuery(document).ready(function($) {
 
-		// Your JavaScript goes here
+		$('[data-toggle="popover"]').popover({trigger: 'click','placement': 'right'});
+
 
 	});
 
